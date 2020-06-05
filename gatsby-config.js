@@ -14,6 +14,13 @@ module.exports = {
             },
         },
         {
+            resolve: 'gatsby-plugin-htaccess',
+            options: {
+                'https': true,
+                'host': 'blog.standingwater.io'
+            }
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `posts`,
