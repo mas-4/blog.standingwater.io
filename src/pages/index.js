@@ -7,16 +7,14 @@ import SEO from "../components/seo"
 
 const ArticleLink = styled(Link)`
     text-decoration: none;
-    color: white;
+    color: black;
 `
 const ArticleContainer = styled.div`
-    padding: 0 30%;
-    background: rgb(0, 0, 0, 50%);
 `
 const IndexPage = ({ data }) => (
     <Layout>
         <SEO title="Home" />
-        <ArticleContainer>
+        <div>
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
             {data.allMarkdownRemark.edges.map(({ node }) => (
                 <ArticleLink to={node.fields.slug} key={node.id}>
@@ -27,7 +25,7 @@ const IndexPage = ({ data }) => (
                     <p>{node.excerpt}</p>
                 </ArticleLink>
             ))}
-        </ArticleContainer>
+        </div>
     </Layout>
 )
 
