@@ -23,10 +23,10 @@ const ArticleDescription = styled.p`
     font-family: Montserrat;
 
 `
-const IndexPage = ({ data }) => (
-    <Layout>
+const IndexPage = ({ data, location}) => (
+    <Layout location={location}>
         <SEO title="Home" />
-        <script src="https://kit.fontawesome.com/687d8c3677.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/687d8c3677.js" crossOrigin="anonymous"></script>
         <div>
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
             {data.allMarkdownRemark.edges.map(({ node }) => (
