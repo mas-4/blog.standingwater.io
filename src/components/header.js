@@ -55,7 +55,7 @@ const Links = styled.div`
 const Banner = styled.div`
 `
 
-const Header = () => (
+const Header = ({ siteTitle }) => (
     <HeadContainer>
         <Banner>
             blog.
