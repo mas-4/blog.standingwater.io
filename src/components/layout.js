@@ -37,6 +37,9 @@ const Layout = ({ children }) => {
     } else {
         SWheader = SmallHeader
     }
+
+    console.log(path)
+    console.log(SWheader)
     return (
         <>
             <SWheader siteTitle={data.site.siteMetadata.title} />
