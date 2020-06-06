@@ -19,7 +19,6 @@ const Footer = styled.div`
     }
 `
 
-
 const Layout = ({ children, location}) => {
     const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -30,6 +29,7 @@ const Layout = ({ children, location}) => {
         }
     }`)
     const path = globalHistory.location.pathname
+    console.log(path)
     return (
         <>
             { path === '/' &&
