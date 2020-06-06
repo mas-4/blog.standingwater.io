@@ -14,6 +14,18 @@ const H2 = styled.div`
 `
 const Body = styled.div`
     font-family: Montserrat;
+    font-size: 1.2rem;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        &:visited {
+            color: lightgrey;
+        }
+        &:hover {
+            color: grey;
+        }
+    }
 `
 
 export default ({ data }) => {
