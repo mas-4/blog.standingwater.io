@@ -19,7 +19,6 @@ const SmallHomeLink = styled(Link)`
     color: black;
 
     text-decoration: none;
-    font-size: 1.5rem;
 
     margin: 0 auto;
     &:hover {
@@ -46,7 +45,7 @@ const SmallHomeLink = styled(Link)`
 const SmallHeader = ({ siteTitle }) => (
     <HeadContainer>
         <Banner>
-            <SmallHomeLink to="/">
+            <SmallHomeLink style={{ fontSize: "1.5rem" }} to="/">
                 {siteTitle}
                 <Icon className="icon" />
             </SmallHomeLink>
