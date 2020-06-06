@@ -14,7 +14,7 @@ const HeadContainer = styled.div`
 `
 const Banner = styled.div`
 `
-const HomeLink = styled(Link)`
+const SmallHomeLink = styled(Link)`
     font-family: Hack;
     color: black;
 
@@ -46,10 +46,10 @@ const HomeLink = styled(Link)`
 const SmallHeader = ({ siteTitle }) => (
     <HeadContainer>
         <Banner>
-            <HomeLink to="/">
+            <SmallHomeLink to="/">
                 {siteTitle}
                 <Icon className="icon" />
-            </HomeLink>
+            </SmallHomeLink>
         </Banner>
     </HeadContainer>
 )

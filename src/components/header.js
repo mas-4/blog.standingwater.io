@@ -10,7 +10,6 @@ const HomeLink = styled.a`
 
     margin: 0 auto;
 
-
     .icon {
         vertical-align: middle;
         @media (max-width:600px){
