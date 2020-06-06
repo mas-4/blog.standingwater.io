@@ -17,17 +17,10 @@ module.exports = {
         },
         {
             resolve: `gatsby-source-filesystem`,
-                options: {
-                    name: `images`,
-                        path: `${__dirname}/src/images`,
-                },
-        },
-        {
-            resolve: 'gatsby-plugin-htaccess',
             options: {
-                'https': true,
-                'host': 'blog.standingwater.io'
-            }
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
         },
         {
             resolve: `gatsby-source-filesystem`,
@@ -36,9 +29,28 @@ module.exports = {
                 path: `${__dirname}/src/posts`
             }
         },
+        {
+            resolve: 'gatsby-plugin-htaccess',
+            options: {
+                'https': true,
+                'host': 'blog.standingwater.io'
+            }
+        },
         `gatsby-transformer-sharp`,
-        `gatsby-transformer-remark`,
         `gatsby-plugin-sharp`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 720,
+                        }
+                    }
+                ]
+            }
+        },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
