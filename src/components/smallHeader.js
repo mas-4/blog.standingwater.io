@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import heron from "../images/heron.svg"
+import Icon from "../images/heron.svg"
 import styled from "styled-components"
 
 const HeadContainer = styled.div`
@@ -19,21 +19,16 @@ const HomeLink = styled(Link)`
     margin: 0 auto;
     &:hover {
         color: grey;
-    }
-    img {
-        vertical-align: middle;
-        max-width: 70px;
-    }
-`
-const Links = styled.div`
-    font-size: 1.5rem;
-    a {
-        text-decoration: none;
-        margin: 0 1rem;
-        color: black;
-        &:hover {
-            color: grey;
+        .icon {
+            fill: grey;
         }
+    }
+    .icon {
+        vertical-align: middle;
+        max-width: 50px;
+    }
+    &:focus {
+        outline: none; // eliminate the ugly ass border
     }
 `
 
@@ -42,13 +37,7 @@ const SmallHeader = ({ siteTitle }) => (
         <Banner>
             <HomeLink to="/">
                 {siteTitle}
-            </HomeLink>
-            <HomeLink to="/">
-                <img
-                    src={heron}
-                    className="logo"
-                    alt="Heron Logo"
-                />
+                <Icon className="icon" />
             </HomeLink>
         </Banner>
     </HeadContainer>
