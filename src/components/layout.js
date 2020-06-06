@@ -33,7 +33,7 @@ const Layout = ({ children, location}) => {
     return (
         <>
             { path === '/' &&
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header/>
             }
             { path !== '/' &&
                 <SmallHeader siteTitle={data.site.siteMetadata.title} />

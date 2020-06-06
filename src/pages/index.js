@@ -28,7 +28,7 @@ const ArticleDescription = styled.p`
 `
 const IndexPage = ({ data, location}) => (
     <Layout location={location}>
-        <SEO title="Home" />
+        <SEO title=" "/>
         <script src="https://kit.fontawesome.com/687d8c3677.js" crossOrigin="anonymous"></script>
         <div>
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
+import SEO from "../components/seo"
 
 const H1 = styled.div`
     font-family: Hack;
@@ -32,7 +33,8 @@ export default ({ data }) => {
     const post = data.markdownRemark
     console.log(post)
     return (
-        <Layout>
+        <Layout title={post.frontmatter.title}>
+            <SEO title={post.frontmatter.title} />
             <div>
                 <H1>{post.frontmatter.title}</H1>
                 <H2>{post.frontmatter.date}</H2>
