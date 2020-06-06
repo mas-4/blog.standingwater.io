@@ -3,7 +3,7 @@ import React from "react"
 import Icon from "../images/heron.svg"
 import styled from "styled-components"
 
-const HomeLink = styled(Link)`
+const HomeLink = styled.a`
     font-family: Hack;
     color: black;
 
@@ -27,7 +27,9 @@ const HomeLink = styled(Link)`
 `
 const HeadContainer = styled.div`
     width: 50%;
+    font-size: 3rem;
     margin: 5rem auto;
+    font-family: Hack;
 `
 const Links = styled.div`
     font-size: 2rem;
@@ -49,8 +51,9 @@ const Banner = styled.div`
 const Header = ({ siteTitle }) => (
     <HeadContainer>
         <Banner>
-            <HomeLink to="/">
-                {siteTitle}
+            blog.
+            <HomeLink href="https://standingwater.io">
+                standingwater.io
                 <Icon className="icon" />
             </HomeLink>
         </Banner>
