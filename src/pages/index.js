@@ -13,6 +13,9 @@ const ArticleLink = styled(Link)`
     color: black;
     font-family: Inconsolata;
     font-size: 2rem;
+    &:hover {
+        color: grey;
+    }
 `
 const ArticleDate = styled.p`
     font-family: Hack;
