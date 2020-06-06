@@ -16,8 +16,8 @@ const Title = styled(Link)`
 const HeadContainer = styled.div`
     width: 50%;
     margin: 0 auto;
-    text-align: center;
 `
+
 const Header = ({ siteTitle }) => (
     <HeadContainer>
         <Title to="/">
