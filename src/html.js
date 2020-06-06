@@ -11,7 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script src="https://kit.fontawesome.com/687d8c3677.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/687d8c3677.js" crossOrigin="anonymous"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

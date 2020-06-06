@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import Icon from "../images/heron.svg"
 import styled from "styled-components"
@@ -56,10 +55,9 @@ const Header = ({ siteTitle }) => (
             </HomeLink>
         </Banner>
         <Links>
-            <a className="fas fa-home" href="https://standingwater.io"></a>
-            <a className="fab fa-github" href="https://github.com/malan88"></a>
-            <a className="fab fa-linkedin-in" href="https://linkedin.com/in/michael-sendker"></a>
-            <a className="fab fa-stack-overflow" href="https://stackoverflow.com/story/malan88"></a>
+            <a aria-hidden="true" aria-label="github" className="fab fa-github" href="https://github.com/malan88"></a>
+            <a aria-hidden="true" aria-label="linkedin" className="fab fa-linkedin-in" href="https://linkedin.com/in/michael-sendker"></a>
+            <a aria-hidden="true" aria-label="stackoverflow" className="fab fa-stack-overflow" href="https://stackoverflow.com/story/malan88"></a>
         </Links>
     </HeadContainer>
 )
