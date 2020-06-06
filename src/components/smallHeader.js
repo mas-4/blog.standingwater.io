@@ -51,12 +51,6 @@ const SmallHeader = ({ siteTitle }) => (
                 />
             </HomeLink>
         </Banner>
-        <Links>
-            <a class="fas fa-home" href="https://standingwater.io"></a>
-            <a class="fab fa-github" href="https://github.com/malan88"></a>
-            <a class="fab fa-linkedin-in" href="https://linkedin.com/in/michael-sendker"></a>
-            <a class="fab fa-stack-overflow" href="https://stackoverflow.com/story/malan88"></a>
-        </Links>
     </HeadContainer>
 )
 
