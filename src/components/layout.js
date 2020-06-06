@@ -19,7 +19,7 @@ const Footer = styled.div`
     }
 `
 
-const Layout = ({ children, location}) => {
+const Layout = ({ children}) => {
     const data = useStaticQuery(graphql`
     query SiteTitleQuery {
         site {
@@ -29,7 +29,7 @@ const Layout = ({ children, location}) => {
         }
     }`)
 
-    if (path === '/') {
+    if (globalHistory.location.pathname === '/') {
         const header = Header
     } else {
         const header = SmallHeader
