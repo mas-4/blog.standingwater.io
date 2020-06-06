@@ -49,7 +49,7 @@ const Layout = ({ children, location}) => {
                 <Footer>
                     © {new Date().getFullYear()} Michael Sendker,{" "}
                     <a href="https://standingwater.io">standingwater.io</a>,{" "}
-                    Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
+                    built with <a href="https://www.gatsbyjs.org">Gatsby</a>
                 </Footer>
             </div>
         </>
