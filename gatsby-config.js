@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: `The Tall Grass`,
+        title: `blog.standingwater.io`,
         description: `A blog for musings, progress, and development.`,
         author: `malan88`,
     },
