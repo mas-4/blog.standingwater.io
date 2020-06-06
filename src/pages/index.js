@@ -5,25 +5,38 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const ArticleContainer = styled.div`
+    margin-top: 5rem;
+`
 const ArticleLink = styled(Link)`
     text-decoration: none;
     color: black;
+    font-family: Inconsolata;
+    font-size: 2rem;
 `
-const ArticleContainer = styled.div`
+const ArticleDate = styled.p`
+    font-family: Hack;
+    font-size:1rem;
+    margin-bottom: 0.5rem;
+`
+const ArticleDescription = styled.p`
+    font-family: Montserrat;
+
 `
 const IndexPage = ({ data }) => (
     <Layout>
         <SEO title="Home" />
+        <script src="https://kit.fontawesome.com/687d8c3677.js" crossorigin="anonymous"></script>
         <div>
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
             {data.allMarkdownRemark.edges.map(({ node }) => (
-                <ArticleLink to={node.fields.slug} key={node.id}>
-                    <h3>
-                        {node.frontmatter.title}{" "}
-                        <span> — {node.frontmatter.date}</span>
-                    </h3>
-                    <p>{node.excerpt}</p>
-                </ArticleLink>
+                <ArticleContainer key={node.id}>
+                    <ArticleLink to={node.fields.slug}>
+                            {node.frontmatter.title}{" "}
+                    </ArticleLink>
+                    <ArticleDate>{node.frontmatter.date}</ArticleDate>
+                    <ArticleDescription>{node.excerpt}</ArticleDescription>
+                </ArticleContainer>
             ))}
         </div>
     </Layout>
