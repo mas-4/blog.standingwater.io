@@ -1,48 +1,56 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
+const ArticleLink = styled(Link)`
+    text-decoration: none;
+    color: white;
+`
+const ArticleContainer = styled.div`
+    padding: 0 30%;
+    background: rgb(0, 0, 0, 50%);
+`
 const IndexPage = ({ data }) => (
     <Layout>
         <SEO title="Home" />
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key={node.id}>
-                <Link to={node.fields.slug}>
+        <ArticleContainer>
+            <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+                <ArticleLink to={node.fields.slug} key={node.id}>
                     <h3>
                         {node.frontmatter.title}{" "}
                         <span> — {node.frontmatter.date}</span>
                     </h3>
-                </Link>
-                <p>{node.excerpt}</p>
-            </div>
-        ))}
+                    <p>{node.excerpt}</p>
+                </ArticleLink>
+            ))}
+        </ArticleContainer>
     </Layout>
 )
 
 export default IndexPage
 
 export const query = graphql`
-    query {
-        allMarkdownRemark {
-            totalCount
-            edges {
-                node {
-                    fields {
-                        slug
-                    }
-                    id
-                    frontmatter {
-                        title
-                        date(formatString: "DD MMMM, YYYY")
-                    }
-                    excerpt
+query {
+    allMarkdownRemark {
+        totalCount
+        edges {
+            node {
+                fields {
+                    slug
                 }
+                id
+                frontmatter {
+                    title
+                    date(formatString: "DD MMMM, YYYY")
+                }
+                excerpt
             }
         }
     }
+}
 `
 

@@ -1,51 +1,57 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
+
+import styled from "styled-components"
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const Container = styled.div`
+    margin: 0 auto;
+`
 
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
-  )
+const Layout = ({ children }) => {
+    const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        image: file(relativePath: { eq: "palmettos.jpg"  }) {
+            childImageSharp {
+                fluid(quality: 100, maxWidth: 1920) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
+    }`)
+
+    const image = data.image.childImageSharp.fluid
+    return (
+        <>
+            <BackgroundImage
+                fluid={image}
+                style={{ height: "50rem" }}
+            >
+                <Header siteTitle={data.site.siteMetadata.title} />
+            </BackgroundImage>
+            <Container>
+                <main>{children}</main>
+                <footer>
+                    © {new Date().getFullYear()}, Built with
+                    {` `}
+                    <a href="https://www.gatsbyjs.org">Gatsby</a>
+                </footer>
+            </Container>
+        </>
+    )
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 }
 
 export default Layout

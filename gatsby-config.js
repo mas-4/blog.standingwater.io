@@ -1,12 +1,24 @@
 module.exports = {
     siteMetadata: {
-        title: `StandingWater`,
+        title: `The Tall Grass`,
         description: `A blog for musings, progress, and development.`,
         author: `malan88`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-styled-components`,
+
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    `ubuntu mono`,
+                    `cousine`,
+                    `space mono`,
+                    `work sans`
+                ]
+            }
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
