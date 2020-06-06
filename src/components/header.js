@@ -7,12 +7,15 @@ const HomeLink = styled.a`
     color: black;
 
     text-decoration: none;
-    font-size: 3rem;
 
     margin: 0 auto;
 
+
     .icon {
         vertical-align: middle;
+        @media (max-width:600px){
+            max-width: 50px;
+        }
     }
     &:hover {
         color: grey;
@@ -29,6 +32,11 @@ const HeadContainer = styled.div`
     font-size: 3rem;
     margin: 5rem auto;
     font-family: Hack;
+    @media (max-width:600px){
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
 `
 const Links = styled.div`
     font-size: 2rem;
