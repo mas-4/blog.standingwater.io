@@ -31,7 +31,6 @@ const Body = styled.div`
 
 export default ({ data }) => {
     const post = data.markdownRemark
-    console.log(post)
     return (
         <Layout title={post.frontmatter.title}>
             <SEO title={post.frontmatter.title} />

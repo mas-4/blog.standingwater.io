@@ -28,16 +28,16 @@ const Layout = ({ children, location}) => {
             }
         }
     }`)
+
+    if (path === '/') {
+        const header = Header
+    } else {
+        const header = SmallHeader
+    }
     const path = globalHistory.location.pathname
-    console.log(path)
     return (
         <>
-            { path === '/' &&
-            <Header/>
-            }
-            { path !== '/' &&
-                <SmallHeader siteTitle={data.site.siteMetadata.title} />
-            }
+            <header siteTitle={data.site.siteMetadata.title} />
             <div
                 style={{
                     margin: `0 auto`,
