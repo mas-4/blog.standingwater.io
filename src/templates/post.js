@@ -16,6 +16,9 @@ const H2 = styled.div`
 const Body = styled.div`
     font-family: Montserrat;
     font-size: 1.2rem;
+    h1, h2, h3, h4, h5 {
+        font-family: Hack;
+    }
     a {
         text-decoration: none;
         font-weight: bold;
@@ -26,6 +29,9 @@ const Body = styled.div`
         &:hover {
             color: grey;
         }
+    }
+    blockquote {
+        font-family: Hack;
     }
 `
 
