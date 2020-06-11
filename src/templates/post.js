@@ -21,7 +21,6 @@ const Body = styled.div`
     }
     a {
         text-decoration: none;
-        font-weight: bold;
         color: black;
         &:visited {
             color: lightgrey;
