@@ -47,7 +47,8 @@ module.exports = {
                         options: {
                             maxWidth: 1920,
                         }
-                    }
+                    },
+                    `gatsby-remark-emoji`,
                 ]
             }
         },
