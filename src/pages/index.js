@@ -26,8 +26,8 @@ const ArticleDescription = styled.p`
     font-family: Montserrat;
 
 `
-const IndexPage = ({ data, location}) => (
-    <Layout location={location}>
+const IndexPage = ({ data }) => (
+    <Layout large={true}>
         <SEO title=" "/>
         <script src="https://kit.fontawesome.com/687d8c3677.js" crossOrigin="anonymous"></script>
         <div>
