@@ -65,9 +65,11 @@ const Header = ({ siteTitle }) => (
         </Banner>
         <Links>
             <a aria-hidden="true" aria-label="github" className="fab fa-github" href="https://github.com/malan88"></a>
-            <a aria-hidden="true" aria-label="linkedin" className="fab fa-linkedin-in" href="https://linkedin.com/in/michael-sendker"></a>
-            <a aria-hidden="true" aria-label="stackoverflow" className="fab fa-stack-overflow" href="https://stackoverflow.com/story/malan88"></a>
             <a aria-hidden="true" aria-label="keybase" className="fab fa-keybase" href="https://keybase.io/m88"></a>
+            <a aria-hidden="true" aria-label="stackoverflow" className="fab fa-stack-overflow" href="https://stackoverflow.com/story/malan88"></a>
+            <a aria-hidden="true" aria-label="hackerrank" className="fab fa-hackerrank" href="https://hackerrank.com/mas88"></a>
+            <a aria-hidden="true" aria-label="kaggle" className="fab fa-kaggle" href="https://kaggle.com/malan88"></a>
+            <a aria-hidden="true" aria-label="linkedin" className="fab fa-linkedin-in" href="https://linkedin.com/in/michael-sendker"></a>
             <a aria-hidden="true" aria-label="résumé" className="fas fa-file-pdf" href="https://github.com/malan88/resume/raw/master/main.pdf"></a>
         </Links>
     </HeadContainer>
