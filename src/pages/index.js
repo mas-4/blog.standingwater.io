@@ -11,7 +11,7 @@ const ArticleContainer = styled.div`
 const ArticleLink = styled(Link)`
     text-decoration: none;
     color: black;
-    font-family: Inconsolata;
+    font-family: Hack;
     font-size: 2rem;
     &:hover {
         color: grey;

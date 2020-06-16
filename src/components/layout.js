@@ -1,6 +1,5 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { globalHistory  } from "@reach/router"
 
 import Header from "./header"
 import SmallHeader from "./smallHeader"
