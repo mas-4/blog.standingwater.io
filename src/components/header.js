@@ -66,6 +66,7 @@ const Header = ({ siteTitle }) => (
         <Links>
             <a aria-hidden="true" aria-label="github" className="fab fa-github" href="https://github.com/malan88"></a>
             <a aria-hidden="true" aria-label="keybase" className="fab fa-keybase" href="https://keybase.io/m88"></a>
+            <a aria-hidden="true" aria-label="spotify" className="fab fa-spotify" href="https://open.spotify.com/user/vsb2duo6ee07ks0tqiudrdqns"></a>
             <a aria-hidden="true" aria-label="stackoverflow" className="fab fa-stack-overflow" href="https://stackoverflow.com/story/malan88"></a>
             <a aria-hidden="true" aria-label="hackerrank" className="fab fa-hackerrank" href="https://hackerrank.com/mas88"></a>
             <a aria-hidden="true" aria-label="kaggle" className="fab fa-kaggle" href="https://kaggle.com/malan88"></a>
