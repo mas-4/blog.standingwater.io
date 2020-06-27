@@ -56,10 +56,11 @@ const IconLink = ({ icon, title, url }) => {
       <a
         aria-hidden="true"
         aria-label={title.toLowerCase()}
-        className={icon}
         href={url}
         title={title}
-      ></a>
+      >
+        <span className={icon}/>
+    </a>
   )
 }
 const Banner = styled.div``
