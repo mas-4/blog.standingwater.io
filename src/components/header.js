@@ -1,31 +1,52 @@
 import React from "react"
 import Icon from "../images/heron.svg"
+import InstaPaper from "../images/instapaper.svg"
 import styled from "styled-components"
 
 const HomeLink = styled.a`
-font-family: Hack;
-color: black;
+  font-family: Hack;
+  color: black;
+  text-decoration: none;
+  margin: 0 auto;
 
-text-decoration: none;
-
-margin: 0 auto;
-
-.icon {
-  vertical-align: middle;
-  @media (max-width: 600px) {
-    max-width: 50px;
-  }
-}
-  &:hover {
-    color: grey;
-    .icon {
-      fill: grey;
+  .icon {
+    vertical-align: middle;
+    @media (max-width: 600px) {
+      max-width: 50px;
     }
   }
-  &:focus {
-    outline: none; // eliminate the ugly ass border
+    &:hover {
+      color: grey;
+      .icon {
+        fill: grey;
+      }
+    }
+    &:focus {
+      outline: none; // eliminate the ugly ass border
   }
 `
+const CustomIconLink = styled.a`
+  color: black;
+  text-decoration: none;
+  margin: 0 auto;
+
+  .icon {
+    width: 35px;
+    height: 32px;
+    vertical-align: middle;
+    padding-bottom: 5px;
+  }
+    &:hover {
+      color: grey;
+      .icon {
+        fill: grey;
+      }
+    }
+    &:focus {
+      outline: none; // eliminate the ugly ass border
+  }
+`
+
 const HeadContainer = styled.div`
 width: 50%;
 font-size: 3rem;
@@ -105,6 +126,9 @@ const Header = ({ siteTitle }) => (
         icon="fab fa-kaggle"
         url="https://kaggle.com/malan88"
       />
+      <CustomIconLink href="https://www.instapaper.com/p/mas">
+        <InstaPaper className="icon" />
+      </CustomIconLink>
       <IconLink
         title="LinkedIn"
         icon="fab fa-linkedin-in"
