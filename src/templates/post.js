@@ -25,12 +25,12 @@ const Body = styled.div`
   }
   a {
     text-decoration: none;
-    color: grey;
+    color: darkgrey;
     &:visited {
-      color: lightgrey;
+      color: grey;
     }
     &:hover {
-      color: darkgrey;
+      color: black;
     }
   }
   blockquote {
