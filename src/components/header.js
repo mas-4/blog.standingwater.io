@@ -3,47 +3,51 @@ import Icon from "../images/heron.svg"
 import InstaPaper from "../images/instapaper.svg"
 import styled from "styled-components"
 
-const HomeLink = styled.a`
-  font-family: Hack;
-  color: black;
-  text-decoration: none;
-  margin: 0 auto;
+const FLEX = "25%"
 
-  .icon {
-    vertical-align: middle;
-    @media (max-width: 600px) {
-      max-width: 50px;
+const HomeLink = styled.a`
+font-family: Hack;
+color: black;
+text-decoration: none;
+margin: 0 auto;
+
+.icon {
+  vertical-align: middle;
+  @media (max-width: 600px) {
+    max-width: 50px;
+  }
+}
+  &:hover {
+    color: grey;
+    .icon {
+      fill: grey;
     }
   }
-    &:hover {
-      color: grey;
-      .icon {
-        fill: grey;
-      }
-    }
-    &:focus {
-      outline: none; // eliminate the ugly ass border
+  &:focus {
+    outline: none; // eliminate the ugly ass border
   }
 `
-const CustomIconLink = styled.a`
-  color: black;
-  text-decoration: none;
-  margin: 0 auto;
 
-  .icon {
-    width: 35px;
-    height: 32px;
-    vertical-align: middle;
-    padding-bottom: 5px;
-  }
-    &:hover {
-      color: grey;
-      .icon {
-        fill: grey;
-      }
+const CustomIconLink = styled.a`
+color: black;
+text-decoration: none;
+margin: 0 auto;
+flex-basis: ${FLEX};
+
+.icon {
+  width: 35px;
+  height: 32px;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+  &:hover {
+    color: grey;
+    .icon {
+      fill: grey;
     }
-    &:focus {
-      outline: none; // eliminate the ugly ass border
+  }
+  &:focus {
+    outline: none; // eliminate the ugly ass border
   }
 `
 
@@ -56,13 +60,22 @@ font-family: Hack;
   font-size: 2rem;
   width: 100%;
   text-align: center;
+  margin: 1rem auto;
 }
 `
 const Links = styled.div`
 font-size: 2rem;
+@media (max-width: 600px) {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 5rem;
+}
 a {
   text-decoration: none;
   margin: 1rem;
+  @media (max-width: 600px) {
+    margin: 0.5rem;
+  }
   color: black;
   &:hover {
     color: grey;
@@ -74,13 +87,14 @@ a {
 `
 const IconLink = ({ icon, title, url }) => {
   return (
-      <a
-        aria-hidden="true"
-        aria-label={title.toLowerCase()}
-        href={url}
-        title={title}
-      >
-        <span className={icon}/>
+    <a
+      aria-hidden="true"
+      aria-label={title.toLowerCase()}
+      href={url}
+      title={title}
+      style={{ flexBasis: FLEX }}
+    >
+      <span className={icon}/>
     </a>
   )
 }

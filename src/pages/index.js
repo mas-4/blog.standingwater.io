@@ -7,6 +7,9 @@ import SEO from "../components/seo"
 
 const ArticleContainer = styled.div`
   margin-top: 5rem;
+  @media (max-width: 600px) {
+    margin-top: 2rem;
+  }
 `
 const ArticleLink = styled(Link)`
   text-decoration: none;
@@ -15,6 +18,9 @@ const ArticleLink = styled(Link)`
   font-size: 2rem;
   &:hover {
     color: grey;
+  }
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
   }
 `
 const ArticleDate = styled.p`
