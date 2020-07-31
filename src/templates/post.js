@@ -25,7 +25,7 @@ const Body = styled.div`
   }
   a {
     text-decoration: none;
-    color: darkgrey;
+    color: #268bd2;
     &:visited {
       color: grey;
     }
