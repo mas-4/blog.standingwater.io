@@ -115,7 +115,7 @@ const Header = ({ siteTitle }) => (
         icon="fab fa-github"
         url="https://github.com/malan88"
       />
-      <IconLink
+      {/*<IconLink
         title="Keybase"
         icon="fab fa-keybase"
         url="https://keybase.io/m88"
@@ -124,7 +124,7 @@ const Header = ({ siteTitle }) => (
         title="Spotify"
         icon="fab fa-spotify"
         url="https://open.spotify.com/user/vsb2duo6ee07ks0tqiudrdqns"
-      />
+      />*/}
       <IconLink
         title="Stack Overflow"
         icon="fab fa-stack-overflow"
@@ -135,7 +135,7 @@ const Header = ({ siteTitle }) => (
         icon="fab fa-hackerrank"
         url="https://hackerrank.com/mas88"
       />
-      <IconLink
+      {/*<IconLink
         title="Kaggle"
         icon="fab fa-kaggle"
         url="https://kaggle.com/malan88"
@@ -143,6 +143,7 @@ const Header = ({ siteTitle }) => (
       <CustomIconLink href="https://www.instapaper.com/p/mas">
         <InstaPaper className="icon" />
       </CustomIconLink>
+      */}
       <IconLink
         title="LinkedIn"
         icon="fab fa-linkedin-in"
