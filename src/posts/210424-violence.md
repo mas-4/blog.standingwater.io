@@ -48,8 +48,9 @@ There's a word for this that I think is too weak: Schadenfreude.
 > the experience of pleasure, joy, or self-satisfaction that comes from learning
 > of or witnessing the troubles, failures, or humiliation of another. 
 
-Fascinatingly, the second sentence in the opening of [this Wikipedia][1] firmly
-establishes this as a human instinct, and not a learned behavior:
+Fascinatingly, the second sentence in the opening of [this Wikipedia][1]
+(accessed 4/24/21) firmly establishes this as a human instinct, and not a
+learned behavior:
 
 > Schadenfreude is a complex emotion where, rather than feeling sympathy, one
 > takes pleasure from watching someone's misfortune. This emotion is displayed
@@ -326,7 +327,7 @@ Chinese Water Torture, which is not actually Chinese,
 > out. If you couldn't predict it, he-said, 'We found, we were able to induce a
 > psychotic break within 20 hours.'"
 
-([Wikipedia][9])
+([Chinese Water Torture, Wikipedia][9], accessed 4/24/21)
 
 Dripping water on a person's forehead is quite apparently a very mild form of
 change in material state. But the experience is significantly amplified by the
