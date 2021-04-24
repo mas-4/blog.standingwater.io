@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url(//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html {
-    font-family: Montserrat, sans-serif;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -440,12 +444,10 @@ blockquote {
     margin-left: 1.45rem;
     margin-right: 1.45rem;
     margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
     margin-bottom: 1.45rem;
+    padding: 2rem 1rem;
     font-family: Montserrat;
+    background-color: #fffff5;
 }
 form {
     margin-left: 0;
