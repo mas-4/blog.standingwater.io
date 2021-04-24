@@ -1,6 +1,6 @@
 import React from "react"
 import Icon from "../images/heron.svg"
-import InstaPaper from "../images/instapaper.svg"
+//import InstaPaper from "../images/instapaper.svg"
 import styled from "styled-components"
 
 const FLEX = "25%"
@@ -28,6 +28,7 @@ margin: 0 auto;
   }
 `
 
+/*
 const CustomIconLink = styled.a`
 color: black;
 text-decoration: none;
@@ -50,6 +51,7 @@ flex-basis: ${FLEX};
     outline: none; // eliminate the ugly ass border
   }
 `
+*/
 
 const HeadContainer = styled.div`
 width: 50%;
