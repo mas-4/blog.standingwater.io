@@ -1,9 +1,7 @@
 ---
-title: "negroni.md"
+title: "The Negroni: A Meditation On Cocktails, Politics, and Taste"
 date: "2021-03-29"
 ---
-
-# The Negroni, A Meditation On Cocktails and Politics
 
 There's a stereotypical image most of us have of the American businessman circa 1960.
 He's the sole breadwinner of his family, his wife prepares him dinner

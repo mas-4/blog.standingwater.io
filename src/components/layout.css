@@ -623,4 +623,8 @@ pre tt:after {
     html {
         font-size: 100%;
     }
+    blockquote {
+        margin: 0;
+        padding: 1rem 0.5rem;
+    }
 }
